@@ -12,6 +12,11 @@ export default {
         accent: 'var(--aw-color-accent)',
         default: 'var(--aw-color-text-default)',
         muted: 'var(--aw-color-text-muted)',
+        ai: {
+          primary: '#00f0ff',   // 青色霓虹
+          accent: '#8b00ff',    // 紫色霓虹
+          dark: '#0a0a0a',
+        },
       },
       fontFamily: {
         sans: ['var(--aw-font-sans, ui-sans-serif)', ...defaultTheme.fontFamily.sans],
