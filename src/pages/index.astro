@@ -22,18 +22,18 @@ const metadata = {
   <!-- Hero Widget ******************* -->
 
   <Hero
-    actions={[
-      {
-        variant: 'primary',
-        text: 'Get template',
-        href: 'https://github.com/arthelokyo/astrowind',
-        target: '_blank',
-        icon: 'tabler:download',
-      },
-      { text: 'Learn more', href: '#features' },
-    ]}
-    image={{ src: '~/assets/images/hero-image.png', alt: 'AstroWind Hero Image' }}
-  >
+  tagline="AI 赋能 · 无限可能"
+  title="探索智能边界<br>释放 AI 无限力量"
+  subtitle="从智能对话、图像生成、数据分析<br>到内容创作与前沿模型，一站式 AI 平台"
+  actions={[
+    { text: "立即体验 AI 工具", href: "/tools", icon: "tabler:sparkles" },
+    { text: "阅读 AI 最新洞见", href: "/blog", variant: "secondary" }
+  ]}
+  image={{
+    src: '~/assets/images/ai-hero.jpg',
+    alt: 'AI 未来科技'
+  }}
+/>
     <Fragment slot="title">
       Free template for <span class="hidden xl:inline">creating websites with</span>
       <span class="text-accent dark:text-white"> Astro 5.0</span> + Tailwind CSS
