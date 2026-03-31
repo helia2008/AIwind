@@ -1,10 +1,9 @@
 site:
   name: "AIwind"
-  site: 'https://aiwind.pages.dev'   # 等部署完后再改成你实际的 Cloudflare 地址
+  site: 'https://aiwind.pages.dev'   # 等部署完后改成你的真实地址
   base: '/'
   trailingSlash: false
 
-# SEO 元数据
 metadata:
   title:
     default: AIwind
@@ -26,7 +25,7 @@ metadata:
     cardType: summary_large_image
 
 i18n:
-  language: zh        # 改成中文
+  language: zh        # 中文
   textDirection: ltr
 
 apps:
@@ -67,4 +66,4 @@ analytics:
       id: null
 
 ui:
-  theme: 'dark'       # 直接深色模式，超强科技感！
+  theme: 'dark'       # 强制深色模式，科技感拉满！
