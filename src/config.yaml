@@ -1,6 +1,6 @@
 site:
   name: "AIwind"
-  site: 'https://aiwind.pages.dev'   # 等部署完后改成你的真实地址
+  site: 'https://helia.us.ci'   # 等部署完后改成你的真实地址
   base: '/'
   trailingSlash: false
 
