@@ -1,36 +1,35 @@
----
-import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
-import ItemGrid from '~/components/ui/ItemGrid.astro';
-import Headline from '~/components/ui/Headline.astro';
-import type { Features as Props } from '~/types';
-
-const {
-  title = await Astro.slots.render('title'),
-  subtitle = await Astro.slots.render('subtitle'),
-  tagline = await Astro.slots.render('tagline'),
-  items = [],
-  columns = 2,
-
-  defaultIcon,
-
-  id,
-  isDark = false,
-  classes = {},
-  bg = await Astro.slots.render('bg'),
-} = Astro.props;
----
-
-<WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-5xl ${classes?.container ?? ''}`} bg={bg}>
-  <Headline title={title} subtitle={subtitle} tagline={tagline} classes={classes?.headline as Record<string, string>} />
-  <ItemGrid
-    items={items}
-    columns={columns}
-    defaultIcon={defaultIcon}
-    classes={{
-      container: '',
-      title: 'md:text-[1.3rem]',
-      icon: 'text-white bg-primary rounded-full w-10 h-10 p-2 md:w-12 md:h-12 md:p-3 mr-4 rtl:ml-4 rtl:mr-0',
-      ...((classes?.items as Record<string, never>) ?? {}),
-    }}
-  />
-</WidgetWrapper>
+<Features
+  title="热门 AI 工具分类"
+  items={[
+    {
+      title: "智能对话",
+      description: "ChatGPT、Claude、Gemini、Grok 等顶级大模型实时体验",
+      icon: "tabler:message-chatbot"
+    },
+    {
+      title: "图像生成",
+      description: "Midjourney、Stable Diffusion、DALL·E、Flux 一键出图",
+      icon: "tabler:photo"
+    },
+    {
+      title: "视频 & 音频",
+      description: "Sora、Runway、Suno、Udio 视频与音乐生成工具",
+      icon: "tabler:video"
+    },
+    {
+      title: "写作助手",
+      description: "Notion AI、Grammarly、Jasper、Copy.ai 智能写作",
+      icon: "tabler:pencil"
+    },
+    {
+      title: "数据智能",
+      description: "Cursor、Perplexity、Poe、Blackbox 代码与数据分析",
+      icon: "tabler:brain"
+    },
+    {
+      title: "更多工具",
+      description: "25+ 免费 AI 工具持续更新，实时导航",
+      icon: "tabler:sparkles"
+    }
+  ]}
+/>
