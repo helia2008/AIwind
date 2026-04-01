@@ -1,4 +1,5 @@
 ---
+import Features from '~/components/widgets/Features.astro';
 import Layout from '~/layouts/PageLayout.astro';
 
 import Hero from '~/components/widgets/Hero.astro';
@@ -57,6 +58,7 @@ const metadata = {
   <!-- Features Widget *************** -->
 
     <!-- AI 工具分类卡片 -->
+    <!-- AI 工具分类卡片 -->
   <Features
     title="热门 AI 工具分类"
     items={[
@@ -72,7 +74,7 @@ const metadata = {
       },
       {
         title: "视频 & 音乐",
-        description: "Sora、Runway、Kling、Suno、Udio、Luma Dream Machine",
+        description: "Sora、Runway、Kling、Suno、Udio、Luma",
         icon: "tabler:video"
       },
       {
@@ -82,7 +84,7 @@ const metadata = {
       },
       {
         title: "代码 & 数据",
-        description: "Cursor、Blackbox、GitHub Copilot、Poe、Blackbox AI",
+        description: "Cursor、Blackbox、GitHub Copilot、Poe",
         icon: "tabler:brain"
       },
       {
