@@ -55,19 +55,57 @@ const metadata = {
 
   <Note title="Philosophy:" description="Simplicity, Best Practices and High Performance" />
 
-   <!-- AI 工具分类卡片（纯 Tailwind，无需额外组件） -->
- <div class="max-w-7xl mx-auto px-6 py-12">
- <div class="text-center mb-12">
- <h2 class="text-4xl font-bold tracking-tight mb-3">热门 AI 工具分类</h2>
- <p class="text-xl text-muted">一站式探索全球最强 AI 工具</p>
- </div>
+     <!-- AI 工具分类卡片（优化版） -->
+  <div class="max-w-7xl mx-auto px-6 py-16">
+    <div class="text-center mb-12">
+      <h2 class="text-4xl md:text-5xl font-bold tracking-tight mb-4">热门 AI 工具分类</h2>
+      <p class="text-xl text-muted max-w-2xl mx-auto">探索全球最强 AI 工具，一站式导航</p>
+    </div>
 
- <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
- <div class="bg-white dark:bg-gray-900 rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all border border-gray-100 dark:border-gray-800">
- <div class="w-12 h-12 bg-cyan-100 dark:bg-cyan-900 rounded-2xl flex items-center justify-center text-3xl mb-6">💬</div>
- <h3 class="text-2xl font-semibold mb-2">智能对话</h3>
- <p class="text-muted">ChatGPT、Claude、Gemini、Grok、DeepSeek</p>
- </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- 卡片1 -->
+      <div class="bg-zinc-900 rounded-3xl p-8 border border-zinc-800 hover:border-cyan-500 transition-all">
+        <div class="text-4xl mb-6">💬</div>
+        <h3 class="text-2xl font-semibold mb-3">智能对话</h3>
+        <p class="text-zinc-400">ChatGPT、Claude、Gemini、Grok、DeepSeek 等顶级大模型</p>
+      </div>
+
+      <!-- 卡片2 -->
+      <div class="bg-zinc-900 rounded-3xl p-8 border border-zinc-800 hover:border-purple-500 transition-all">
+        <div class="text-4xl mb-6">🖼️</div>
+        <h3 class="text-2xl font-semibold mb-3">图像生成</h3>
+        <p class="text-zinc-400">Midjourney、Flux、DALL·E、Stable Diffusion、Ideogram</p>
+      </div>
+
+      <!-- 卡片3 -->
+      <div class="bg-zinc-900 rounded-3xl p-8 border border-zinc-800 hover:border-pink-500 transition-all">
+        <div class="text-4xl mb-6">🎥</div>
+        <h3 class="text-2xl font-semibold mb-3">视频 & 音乐</h3>
+        <p class="text-zinc-400">Sora、Runway、Kling、Suno、Udio、Luma</p>
+      </div>
+
+      <!-- 卡片4 -->
+      <div class="bg-zinc-900 rounded-3xl p-8 border border-zinc-800 hover:border-emerald-500 transition-all">
+        <div class="text-4xl mb-6">✍️</div>
+        <h3 class="text-2xl font-semibold mb-3">写作 & 内容</h3>
+        <p class="text-zinc-400">Notion AI、Cursor、Perplexity、Jasper、Gamma</p>
+      </div>
+
+      <!-- 卡片5 -->
+      <div class="bg-zinc-900 rounded-3xl p-8 border border-zinc-800 hover:border-amber-500 transition-all">
+        <div class="text-4xl mb-6">💻</div>
+        <h3 class="text-2xl font-semibold mb-3">代码 & 数据</h3>
+        <p class="text-zinc-400">Cursor、Blackbox、GitHub Copilot、Poe</p>
+      </div>
+
+      <!-- 卡片6 -->
+      <div class="bg-zinc-900 rounded-3xl p-8 border border-zinc-800 hover:border-rose-500 transition-all">
+        <div class="text-4xl mb-6">🌐</div>
+        <h3 class="text-2xl font-semibold mb-3">更多工具</h3>
+        <p class="text-zinc-400">25+ 免费 AI 工具持续更新，欢迎探索</p>
+      </div>
+    </div>
+  </div>
 
  <div class="bg-white dark:bg-gray-900 rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all border border-gray-100 dark:border-gray-800">
  <div class="w-12 h-12 bg-purple-100 dark:bg-purple-900 rounded-2xl flex items-center justify-center text-3xl mb-6">🖼️</div>
