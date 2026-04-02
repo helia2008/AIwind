@@ -1,6 +1,5 @@
 ---
 import PageLayout from '~/layouts/PageLayout.astro';
-import Features from '~/components/widgets/Features.astro';
 
 const meta = {
   title: 'AI 工具大全',
@@ -9,27 +8,44 @@ const meta = {
 ---
 
 <PageLayout metadata={meta}>
-  <div class="max-w-7xl mx-auto px-6 py-12">
+  <div class="max-w-7xl mx-auto px-6 py-16">
     <div class="text-center mb-12">
       <h1 class="text-5xl font-bold tracking-tight mb-4">AI 工具大全</h1>
-      <p class="text-xl text-muted max-w-2xl mx-auto">实时收录全球最热门 AI 工具，一键直达，持续更新</p>
+      <p class="text-xl text-muted">实时收录全球最热门 AI 工具，一键直达，持续更新</p>
     </div>
 
-    <Features
-      title="25+ 热门 AI 工具"
-      items={[
-        { title: "ChatGPT", description: "OpenAI 官方对话", icon: "tabler:message-chatbot", href: "https://chat.openai.com" },
-        { title: "Claude", description: "Anthropic 最强模型", icon: "tabler:message-chatbot", href: "https://claude.ai" },
-        { title: "Gemini", description: "Google 最新大模型", icon: "tabler:message-chatbot", href: "https://gemini.google.com" },
-        { title: "Grok", description: "xAI 幽默 AI", icon: "tabler:message-chatbot", href: "https://grok.x.ai" },
-        { title: "Midjourney", description: "顶级图像生成", icon: "tabler:photo", href: "https://midjourney.com" },
-        { title: "Flux", description: "最新开源图像模型", icon: "tabler:photo", href: "https://flux.ai" },
-        { title: "Sora", description: "OpenAI 视频生成", icon: "tabler:video", href: "https://openai.com/sora" },
-        { title: "Runway", description: "专业视频生成", icon: "tabler:video", href: "https://runwayml.com" },
-        { title: "Cursor", description: "AI 代码编辑器", icon: "tabler:code", href: "https://cursor.com" },
-        { title: "Perplexity", description: "AI 搜索引擎", icon: "tabler:search", href: "https://perplexity.ai" },
-        // 你可以继续添加更多工具...
-      ]}
-    />
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <a href="https://chat.openai.com" target="_blank" class="bg-zinc-900 rounded-3xl p-8 border border-zinc-800 hover:border-cyan-400 transition-all group block">
+        <div class="text-5xl mb-6 group-hover:scale-110 transition-transform">💬</div>
+        <h3 class="text-2xl font-semibold mb-2">ChatGPT</h3>
+        <p class="text-zinc-400">OpenAI 官方对话工具</p>
+      </a>
+      <a href="https://claude.ai" target="_blank" class="bg-zinc-900 rounded-3xl p-8 border border-zinc-800 hover:border-purple-400 transition-all group block">
+        <div class="text-5xl mb-6 group-hover:scale-110 transition-transform">💬</div>
+        <h3 class="text-2xl font-semibold mb-2">Claude</h3>
+        <p class="text-zinc-400">Anthropic 最强模型</p>
+      </a>
+      <a href="https://gemini.google.com" target="_blank" class="bg-zinc-900 rounded-3xl p-8 border border-zinc-800 hover:border-pink-400 transition-all group block">
+        <div class="text-5xl mb-6 group-hover:scale-110 transition-transform">💬</div>
+        <h3 class="text-2xl font-semibold mb-2">Gemini</h3>
+        <p class="text-zinc-400">Google 最新大模型</p>
+      </a>
+      <a href="https://grok.x.ai" target="_blank" class="bg-zinc-900 rounded-3xl p-8 border border-zinc-800 hover:border-amber-400 transition-all group block">
+        <div class="text-5xl mb-6 group-hover:scale-110 transition-transform">💬</div>
+        <h3 class="text-2xl font-semibold mb-2">Grok</h3>
+        <p class="text-zinc-400">xAI 幽默 AI</p>
+      </a>
+      <a href="https://midjourney.com" target="_blank" class="bg-zinc-900 rounded-3xl p-8 border border-zinc-800 hover:border-purple-400 transition-all group block">
+        <div class="text-5xl mb-6 group-hover:scale-110 transition-transform">🖼️</div>
+        <h3 class="text-2xl font-semibold mb-2">Midjourney</h3>
+        <p class="text-zinc-400">顶级图像生成</p>
+      </a>
+      <a href="https://flux.ai" target="_blank" class="bg-zinc-900 rounded-3xl p-8 border border-zinc-800 hover:border-cyan-400 transition-all group block">
+        <div class="text-5xl mb-6 group-hover:scale-110 transition-transform">🖼️</div>
+        <h3 class="text-2xl font-semibold mb-2">Flux</h3>
+        <p class="text-zinc-400">最新开源图像模型</p>
+      </a>
+      <!-- 可以继续添加更多工具卡片，这里只示例6个，你可以自行扩展 -->
+    </div>
   </div>
 </PageLayout>
