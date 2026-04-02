@@ -41,17 +41,19 @@ export const footerData = {
       title: '关于',
       links: [
         { text: '关于我们', href: '/about' },
+        { text: '联系方式', href: '/contact' },
       ],
     },
   ],
   secondaryLinks: [
-    { text: '条款', href: getPermalink('/terms') },
-    { text: '隐私政策', href: getPermalink('/privacy') },
+    { text: '条款', href: '/terms' },
+    { text: '隐私政策', href: '/privacy' },
   ],
   socialLinks: [
     { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/helia2008/AIwind' },
   ],
   footNote: `
-    © 2026 AIwind · AI 驱动未来
+    © 2026 AIwind · AI 驱动未来<br>
+    由 AstroWind 模板驱动 · 所有权利保留
   `,
 };
