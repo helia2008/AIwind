@@ -25,8 +25,15 @@ metadata:
     cardType: summary_large_image
 
 i18n:
-  language: zh        # 中文
+  language: zh          # 默认语言为中文
   textDirection: ltr
+  languages:
+    - code: zh
+      label: 中文
+      hrefLang: zh-CN
+    - code: en
+      label: English
+      hrefLang: en
 
 apps:
   blog:
