@@ -21,20 +21,19 @@ const { metadata } = Astro.props;
   </slot>
   <slot name="header">
    <Header 
-     links={[
-       { text: '首页', href: '/' },
-       { text: 'AI 工具', href: '/tools' },
-       { text: '最新洞见', href: '/blog' },
-       { text: '关于我们', href: '/about' }
-     ]}
-     actions={[
-       { text: '免费体验 AI', href: '/tools' },
-       { text: 'EN', href: '/en', variant: 'secondary' }
-     ]}
-     isSticky 
-     showRssFeed 
-     showToggleTheme 
-   />
+  links={[
+    { text: '首页', href: '/' },
+    { text: 'AI 工具', href: '/tools' },
+    { text: '最新洞见', href: '/blog' },
+    { text: '关于我们', href: '/about' }
+  ]}
+  actions={[
+    { text: 'EN', href: '/en' }
+  ]}
+  isSticky 
+  showRssFeed 
+  showToggleTheme 
+/>
   </slot>
   <main>
     <slot />
