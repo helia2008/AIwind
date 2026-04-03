@@ -1,0 +1,26 @@
+---
+import PageLayout from '~/layouts/PageLayout.astro';
+
+const meta = {
+  title: 'AI Tools Hub',
+  description: '25+ Free AI Tools Navigation | ChatGPT / Midjourney / Claude / Sora',
+};
+---
+
+<PageLayout metadata={meta}>
+  <div class="max-w-7xl mx-auto px-6 py-16">
+    <div class="text-center mb-12">
+      <h1 class="text-5xl font-bold tracking-tight mb-4">AI Tools Hub</h1>
+      <p class="text-xl text-muted">Real-time collection of the world's most popular AI tools</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <a href="https://chat.openai.com" target="_blank" class="block bg-zinc-900 rounded-3xl p-8 border border-zinc-800 hover:border-cyan-400 transition-all group">
+        <div class="text-5xl mb-6 group-hover:scale-110">💬</div>
+        <h3 class="text-2xl font-semibold mb-2">ChatGPT</h3>
+        <p class="text-zinc-400">Official OpenAI chat tool</p>
+      </a>
+      <!-- 继续添加其他工具卡片... -->
+    </div>
+  </div>
+</PageLayout>
