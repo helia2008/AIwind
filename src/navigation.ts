@@ -54,8 +54,7 @@ export const footerData = {
   ],
   footNote: `
     © 2026 AIwind · AI 驱动未来<br>
-    由 AstroWind 驱动 · 所有权利保留
-    <br><br>
+    由 AstroWind 驱动 · 所有权利保留<br>
     <span class="text-xs text-muted">沪ICP备XXXXXXXX号</span>
   `,
 };
